@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 2</title>
+</head>
+<body>
+    <p id="one">Sachin</p>
+    <p class="two">Jarves</p>
+    <p class="two">Altron</p>
+    <p class="two">Iron Man</p>
+
+    <ul><li>like</li>
+        <li>Share</li>
+        <li>Subscribe</li></ul>
+
+    <!-- How to access body Siblings -->
+    <script type="text/Javascript">
+        var child = document.body.children;
+        console.log(child);
+
+        // add a new child in a body
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This is anew paragrapgh.");
+        para.appendChild(textNode);
+        console.log(para);
+        document.body.appendChild(para)
+
+
+        // access first and last Child
+        
+        var list = document.querySelector('ul');
+        console.log(list);
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+        var first_sibling = one.nextElementSibling;
+        console.log(first_sibling)
+
+        console.log(list.parentNode)
+    </script>
+</body>
+</html>
