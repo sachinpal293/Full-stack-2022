@@ -1,0 +1,22 @@
+<script>
+
+    const youtuber1 = {
+        name : "Sachin Kumar Pal",
+        content:"Programming and technology",
+        feature : function(rating,support)
+        {
+            console.log(`very friendly way of teaching. ${this.name} is my
+             fav ${this.content} channel. I will love to give rating ${rating} star.
+             Please ${support} ${this.name} channel`);
+        }
+    }
+    youtuber1.feature(10,"Subcribe");
+    const youtuber2 = {
+        name:"Kuch bhi",
+        content:"Us se jakar puch"
+    }
+
+    youtuber1.feature.call(youtuber2,5,"Like");
+
+    youtuber1.feature.apply(youtuber2,[5,"subscibe"]);
+</script>

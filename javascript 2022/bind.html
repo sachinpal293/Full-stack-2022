@@ -1,0 +1,19 @@
+<script>
+    const obj1 = {
+        name:"Sachin",
+        occ:"Student"
+    }
+
+    const obj2 = {
+        name:"Kuch bhii",
+        content:"kuch bhi"
+    }
+
+    function feature(rate){
+        console.log(this.name+" "+this.content+" "+rate)
+    }
+
+    let one = feature.bind(obj2);
+    one(10);
+
+</script>
