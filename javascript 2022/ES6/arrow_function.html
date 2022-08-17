@@ -1,0 +1,29 @@
+<script>
+    /*
+    Arrow functions (also called "fat arrow function") are undoubtedly one of the more populer 
+    features of ES6. they introduced a new way of writing concise function.
+    */
+    let name = "Aryan";
+    let sname = "Kumar";
+
+    const print = () => name+" "+sname;
+    console.log(print())
+
+
+    const sum = () =>{
+         let a = 50;
+         return a;
+    }
+   const fun = (a , b  = 0) =>{
+    console.log("Hum hai fat arrow function hamra se puchha ki hum ka karile");
+    // console.log(mycallback()+b);
+    console.log(a+b)
+   }
+   fun(20);
+
+
+   /*
+   Default functions Parameters allow named parameters to be initialized with default values 
+   if no value or undefined is passed 
+   */
+</script>

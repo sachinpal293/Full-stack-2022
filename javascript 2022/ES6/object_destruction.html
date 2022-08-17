@@ -1,0 +1,23 @@
+<script>
+    /*
+    The Destructing assignment syntax is a Javascript expression that makes it possible
+    to unpack values from array , or properties from objects , into distinct variable.
+    */
+    const biodata = {
+        name:"Sachin",
+        age:22,
+        deg:"B.Tech CSE",
+        kuchbhi:{
+            nisha:"Kuchni",
+            sachin:"Kuch to bol lo"
+        }
+    }
+
+    // let {name,deg} = biodata;
+
+    // second property
+    let {name:myname,age:kitne_saal_ka_hai_bhai,deg:key_paad_liya_tane_abhi_tk,kuchbhi} =biodata
+    
+    
+    console.log(kuchbhi.nisha)
+</script>
