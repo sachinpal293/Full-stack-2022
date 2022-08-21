@@ -1,0 +1,21 @@
+<script>
+async function getcovidapi()
+{
+    try{
+    const jsondata = await fetch('https://api.covid19api.com/summary');     
+    
+
+    const jsdata = await jsondata.json();
+    const mydata = jsdata.Countries[77];
+    console.log(`The name of the country is ${mydata.Country}.
+The current case of Covid 19 is ${mydata.NewConfirmed}`);
+    }
+    catch(err)
+    {
+      console.log(err)
+    }
+}
+
+getcovidapi();
+
+</script>
